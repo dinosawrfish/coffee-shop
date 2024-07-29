@@ -6,7 +6,7 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,4 +72,25 @@
 .order-button {
     display: flex;
     justify-content: center;
+}
+
+.input {
+    position: relative;
+    display: inline-block;
+}
+
+.name-input {
+    border-color:rgb(158, 76, 21);
+    padding: 8px;
+    border-radius: 14px;
+}
+
+.input-label {
+    background-color:rgb(240, 204, 128);
+    color:rgb(158, 76, 21);
+    font-size: 14px;
+    position: absolute;
+    left: 25px;
+    top: -7px;
+    padding: 0 2px;
 }
