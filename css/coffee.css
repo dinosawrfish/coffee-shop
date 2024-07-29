@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+.checkout {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkout-header {
+    grid-area: header;
+    background-color: rgb(70, 39, 28);
+    margin: 1px;
+}
+
+.checkout::before {
+    content: url(https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png);
+}
+
+.items-prices {
+    grid-area: items;
+}
+
+.order-name {
+    grid-area: order-name;
+}
+
+.payment {
+    grid-area: payment;
+}
+
+.totals-table {
+    grid-area: totals-table;
+}
+
+.order-button {
+    grid-area: order-button;
+}
+
+.page {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "items order-name"
+    "items payment"
+    "totals-table totals-table"
+    "order-button order-button";
+}
+
+.box {
+    background: rgb(240, 204, 128);
+    padding: 20px;
+    margin: 25px;
+    border-radius: 10px;
+}
+
+.totals-table {
+    display: flex;
+    justify-content: center;
+}
+
+.order-button {
+    display: flex;
+    justify-content: center;
+}

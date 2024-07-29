@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coffee Masters</title>
+        <link rel="stylesheet" href="css/coffee.css" />
+    </head>
+
+    <body>
+        <div class="page">
+            <header class="checkout-header">
+                <h1 class="checkout">Coffee Masters</h1>
+            </header>
+            <div class="items-prices box">
+                <h3 class="box-header"> ITEMS </h3>
+                <ul class="items">
+                    <li class="item">
+                        <h4 class="item-name">Capuccino</h4>
+                        <h4 class="item-price">$3.35</h4>
+                        <p class="item-quantity">1x</p>
+                        <p class="item-notes">Lite foam</p>
+                    </li>
+                    <li class="item">
+                        <h4 class="item-name">Capuccino</h4>
+                        <h4 class="item-price">$3.85</h4>
+                        <p class="item-quantity">1x</p>
+                        <p class="item-notes">Lite milk</p>
+                        <p class="item-notes">Double espresso</p>
+                    </li>
+                    <li class="item">
+                        <h4 class="item-name">Crossaint</h4>
+                        <h4 class="item-price">$2.45</h4>
+                        <p class="item-quantity">1x</p>
+                        <p class="item-notes">Butter</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="order-name box">
+                <h3 class="box-header"> NAME </h3>
+                <label for="name" class="input-label">Name for order</label>
+                <input id="name" class="name-input" placeholder="Ford Perfect" />
+            </div>
+            <div class="payment box">
+                <h3 class="box-header"> PAYMENT </h3>
+                <div class="number">
+                    <label for="card-number" class="input-label">Card number</label>
+                    <input id="card-number" class="card-input" placeholder="XXXX XXXX XXXX XXXX" />
+                </div>
+                <div class="ccv">
+                    <label for="ccv-number" class="input-label">CCV Number</label>
+                    <input id="ccv-number" class="ccv-input" placeholder="XXX" />
+                </div>
+            </div>
+            <div class="totals-table">
+                <table class="totals-tally">
+                    <tbody>
+                        <tr class="subtotal">
+                            <td>Subtotal:</td>
+                            <td>$9.65</td>
+                        </tr>
+                        <tr class="tax">
+                            <td>Tax:</td>
+                            <td>$0.82</td>
+                        </tr>
+                        <tr class="total">
+                            <td>Total:</td>
+                            <td>$10.47</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="order-button">
+                <button>Place Order</button>
+            </div>
+        </div>
+    </body>
+</html>
