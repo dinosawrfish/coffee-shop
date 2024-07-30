@@ -45,11 +45,11 @@
 .page {
     display: grid;
     grid-template-areas:
-    "header header"
-    "items order-name"
-    "items payment"
-    "totals-table totals-table"
-    "order-button order-button";
+    "header header header header"
+    "items items order-name order-name"
+    "items items payment payment"
+    ". totals-table totals-table ."
+    "order-button order-button order-button order-button";
 }
 
 .box {
@@ -155,4 +155,34 @@
     flex-direction: row;
     justify-content: space-evenly;
     border-bottom: 1px solid black;
+}
+
+.totals-table {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.totals-tally {
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr;
+    width: 500px;
+    justify-content:left;
+}
+
+.total {
+    align-self: center;
+    font-weight: 700;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+button {
+    background-color:rgb(158, 76, 21);
+    width: 500px;
+    height: 40px;
+    border-radius: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
