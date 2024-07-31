@@ -45,6 +45,11 @@
 
 .page {
     display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    padding: 30px;
+    margin: 0 auto;
+    width: 100%;
     grid-template-areas:
     "header header header header"
     "items items order-name order-name"
@@ -87,7 +92,8 @@
     padding: 13px;
     border-radius: 14px;
     background-color:rgb(240, 204, 128);
-    width: 100%
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .input-label {
@@ -102,11 +108,6 @@
 
 .cvv-name{
     width: 40%;
-}
-
-.payment {
-    display: grid;
-    grid-template-rows: min-content;
 }
 
 .order-name {
@@ -158,6 +159,10 @@
     border-bottom: 1px solid black;
 }
 
+.item:last-child {
+    border-bottom: none;
+}
+
 .totals-table {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -182,7 +187,7 @@
 
 button {
     background-color:rgb(158, 76, 21);
-    width: 700px;
+    width: 100%;
     height: 40px;
     border-radius: 20px;
     justify-self: center;
