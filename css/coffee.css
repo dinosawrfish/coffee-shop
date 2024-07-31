@@ -40,6 +40,7 @@
 
 .order-button {
     grid-area: order-button;
+    width: 100%;
 }
 
 .page {
@@ -176,13 +177,14 @@
 .row {
     display: flex;
     justify-content: space-between;
-    width: 250px;
+    width: 500px;
 }
 
 button {
     background-color:rgb(158, 76, 21);
-    width: 500px;
+    width: 700px;
     height: 40px;
     border-radius: 20px;
+    justify-self: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
